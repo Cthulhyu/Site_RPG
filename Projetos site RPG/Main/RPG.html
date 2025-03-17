@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon and Dragons</title>
+    <meta name="author" content="Codeconvey"/>
+    <link rel='stylesheet' href='https://icono-49d6.kxcdn.com/icono.min.css'>
+    <link href="Paint-rpg.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilomusic.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-black fontin  ">
+    <div class="container-fluid inter ">
+        <a class="navbar-brand text1  " href="../Login/Login.html">Login</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active text1 " aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text1" href="#">Aventura</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text1" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Itens
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text1" href="#">Action</a></li>
+                        <li><a class="dropdown-item text1" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text1" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text1" href="#" tabindex="-1" aria-disabled="true">Suporte</a>
+                </li>
+
+
+                <div class="posiau"></div>
+                <div class="audio-player" style="margin: 0 auto">
+                    <div class="timeline">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="controls">
+                        <div class="play-container">
+                            <div class="toggle-play play">
+                            </div>
+                        </div>
+                        <div class="time">
+                            <div class="current">0:00</div>
+                            <div class="divider">/</div>
+                            <div class="length"></div>
+                        </div>
+                        <div class="name">Music Song</div>
+                        <!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+                        <div class="volume-container">
+                            <div class="volume-button">
+                                <div class="volume icono-volumeMedium"></div>
+                            </div>
+                            <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="player.js"></script>
+            </ul>
+            <form class="d-flex" action="../Carrinho/Carrinho.html">
+                <button class="btn  float-end pozi" type="submit"><img class="tamac"
+                                                                       src="../Carrinho/icone-de-panier-rouge.png">
+                </button>
+            </form>
+            <form class="d-flex text1">
+                <input class="form-control me-2 text1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn  btn btn-outline-danger text1" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<h1 class="texto">Dungeon and Dragons</h1>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner container-md p-4  ">
+        <div class="carousel-item active  ">
+            <img src="../FotosRPG/badfon-hearthstone-curse-of.jpg"
+                 class="d-block w-100  border border-5 border-dark rounded-3 "/>
+        </div>
+        <div class="carousel-item ">
+            <img src="../FotosRPG/gnomo.jpg" class="d-block w-100  border border-5 border-dark rounded-3"/>
+        </div>
+        <div class="carousel-item ">
+            <img src="../FotosRPG/briga.jpg" class="d-block w-100  border border-5 border-dark rounded-3"/>
+        </div>
+        <div class="carousel-item ">
+            <img src="../FotosRPG/orc.jpg" class="d-block w-100  border border-5 border-dark rounded-3"/>
+        </div>
+        <div class="carousel-item ">
+            <img src="../FotosRPG/aventura.jpg" class="d-block w-100  border border-5 border-dark rounded-3"/>
+        </div>
+        <div class="carousel-item ">
+            <img src="../FotosRPG/hearthstone.jpg" class="d-block w-100  border border-5 border-dark rounded-3"/>
+        </div>
+        <div class="carousel-item">
+            <video class="video1 w-100  border border-5 border-dark rounded-3" autoplay loop muted>
+                <source src="Aneis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<h2 class="textcom pt-5 p-5 ">Nossos Produtos</h2>
+<div class="container row g-4 mx-auto ">
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotoProdutos/wow-4k-wallpaper-xhpe1m06x39yuyxt.jpg" alt="..."/>
+        <h5 class="card-title  textp p-4">Peste Veia</h5>
+        <p class="card-text textProd"> Medieval Brabo, caçador de demonios onde é implacavel com sua destreza</p>
+        <p class="fw-bold dolar"> R$ 235,87</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top"
+             src="../FotoProdutos/wallpapersden.com_dungeons-and-dragons-hd-curse-of-strahd_1920x1200.jpg"
+             alt="...">
+        <h5 class="card-title textp p-4">Draculaichon</h5>
+        <p class="card-text textProd">Joguin de vampiro real "Ele não brilha"</p>
+        <p class="fw-bold dolar"> R$ 467,34</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotoProdutos/thumb-350-1384288.webp"/>
+        <h5 class="card-title textp p-4">Jaré</h5>
+        <p class="card-text textProd">O caba Vira Dragonborn</p>
+        <p class="fw-bold dolar"> R$ 324,98</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft ">
+        <img class="card-img-top" src="../FotoProdutos/thumb-1920-1107088.jpg" alt="..."/>
+        <h5 class="card-title  textp p-4">The Licht King</h5>
+        <p class="card-text textProd">Criatura que jamais morrerá, á menos que seu filactere seja destruido</p>
+        <p class="fw-bold dolar"> R$ 587,98</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotoProdutos/thumb-1920-1107324.jpg" alt="..."/>
+        <h5 class="card-title textp p-4">Beholder</h5>
+        <p class="card-text textProd">Criatura aligenigena, com deveras olhos que podem lhe trazer dor e sofrimento</p>
+        <p class="fw-bold dolar"> R$ 465,99</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotosRPG/badfon-hearthstone-curse-of.jpg" alt="..."/>
+        <h5 class="card-title textp p-4">Kel'thuza</h5>
+        <p class="card-text textProd">Bruxo que colaborou com a criação de Lich king, que o deixou louco e só restou seu
+            gatinho</p>
+        <p class="fw-bold dolar"> R$ 457,99</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+
+
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotoProdutos/warcraft-orc-axe-desktop-wallpaper-preview.jpg" alt="..."/>
+        <h5 class="card-title textp p-4">Orc</h5>
+        <p class="card-text textProd">Individuos de outro planeta, buscam um lugar que possam chamar de casa</p>
+        <p class="fw-bold dolar"> R$ 135,75</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotoProdutos/warcraft-orc-warrior-desktop-wallpaper-4k.jpg" alt="..."/>
+        <h5 class="card-title textp p-4 nft">Hobbgoblin</h5>
+        <p class="card-text textProd">Evolução de goblin, possuim muita habilidade de proficiencia em domesticação de
+            lobos</p>
+        <p class="fw-bold dolar"> R$ 245</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+    <div class="card-header col-md-4 nft">
+        <img class="card-img-top" src="../FotoProdutos/wow-4k-wallpaper-59nxaxdkzqdzq81j.jpg"/>
+        <h5 class="card-title textp p-4 nft">Illidan Tempesfúria</h5>
+        <p class="card-text textProd">Abandonado por seu irmão, ele vaga em busca de vingança,
+            mas há coisas mais importantes</p>
+        <p class="fw-bold dolar"> R$ 562,12</p>
+        <form class="d-flex" action="../Carrinho/Carrinho.html">
+            <button href="#" class="btn btn-primary" type="submit">Comprar</button>
+    </div>
+</div>
+</div>
+</div>
+<footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="corf" href="https://github.com/Cthulhyu">Projeto - Gabriel Mendes Boaventura</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+</script>
+</body>
+</html>
